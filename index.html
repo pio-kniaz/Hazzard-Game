@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLot machine game</title>
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link rel="stylesheet" href="/css/base/start.css">
+  <link rel="stylesheet" href="/css/modules/navigation.css">
+  <link rel="stylesheet" href="/css/modules/buttons.css">
+  <link rel="stylesheet" href="/css/modules/score.css">
+  <link rel="stylesheet" href="/css/modules/container.css">
+  <link rel="stylesheet" href="/css/modules/box.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="nav">
+      <button type="button" name="button" class="button__hamburger">Wining Table</button>
+      <ul class="nav__list hide">
+        <li class="nav__item"><img src="img/006-pizza.png"> <img src="img/006-pizza.png"> <img src="img/006-pizza.png"><span class="pizza-nav item__val">Node</span></li>
+        <li class="nav__item"><img src="img/004-beer.png"> <img src="img/004-beer.png"> <img src="img/004-beer.png"><span class="beer-nav item__val">JavaScript</span></li>
+        <li class="nav__item"><img src="img/002-food.png"> <img src="img/002-food.png"> <img src="img/002-food.png"><span class="brocoil-nav item__val"></span></li>
+<li class="nav__item"><img src="img/005-grapes.png"> <img src="img/005-grapes.png"> <img src="img/005-grapes.png"><span class="grape-nav item__val">HTML5</span></li>        <li class="nav__item"><img src="img/001-fruit.png"> <img src="img/001-fruit.png"> <img src="img/001-fruit.png"><span class="lemon-nav item__val"></span></li>
+        <li class="nav__item"><img src="img/003-cherries.png"> <img src="img/003-cherries.png"> <img src="img/003-cherries.png"><span class="cherries-nav item__val">css</span></span>
+        </li>
+      </ul>
+    </nav>
+    <div class="container__header">
+
+      </div>
+    <div class="container__f1border">
+
+
+
+  <div class="container__game">
+
+
+    <div class="container__display">
+      <div class="first-row">
+
+      <!--1st square  -->
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+
+      <div class="box box-win"></div>
+      <!--5th square  -->
+      <div class="box box-win"></div>
+      <!--6th square  -->
+      <div class="box box-win"></div>
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <div class="box box-1"></div>
+      <!--2nd square  -->
+      <div class="box box-1"></div>
+      <!--3rd square  -->
+      <div class="box box-1"></div>
+
+      <!--4th square  -->
+
+
+      <div class="box box-3"></div>
+      <!--8th square  -->
+      <div class="box box-3 "></div>
+      <!--9th square  -->
+      <div class="box box-3 "></div>
+
+      </div>
+      <!--7th square  -->
+
+    </div>
+
+    <div class="score container__display--small">
+      <div class="score__show score__show--large">
+        <span class="score--start-coins"></span>
+        <span class="score__info">COINS</span>
+      </div>
+      <div class="score__show score__show--medium">
+        <span class="score--winingScore"></span>
+        <span class="score__info">WIN</span>
+      </div>
+      <div class="score__show score__show--small">
+        <span class="score--bet">score</span>
+        <span class="score__info">BET</span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <div class="button__wrapper2">
+
+  <div class="button button--spin">
+  <div class="outer">
+    <div class="height">
+      <button id="spin" type="button" name="button" class="inner">Spin</button>
+    </div>
+  </div>
+</div>
+<div class="button button--on">
+  <div class="outer">
+    <div class="height">
+      <button id="valUp" type="button" name="button" class="inner" onclick="playBet()">+</button>
+    </div>
+  </div>
+</div>
+<div class="button button--down">
+  <div class="outer">
+    <div class="height">
+      <button id="valDown" type="button" name="button" class="inner" onclick="playBet()">-</button>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+<audio class="sound__spin"src="/sounds/spin.wav"></audio>
+<audio class="sound__win"src="/sounds/win.wav"></audio>
+<audio class="sound__bet"src="/sounds/bet.wav"></audio>
+
+
+
+  </body>
+  <script src="js/square.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/toggler.js"></script>
+  <script type="text/javascript" src="js/sounds.js"></script>
+</html>

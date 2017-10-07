@@ -1,0 +1,53 @@
+.score {
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
+  padding: 7px;
+}
+
+.score__show {
+  max-width: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+}
+
+.score__show span {
+  display: block;
+}
+
+.score__show--small {
+  width: 25%;
+}
+
+.score__show--medium {
+  width: 30%;
+}
+
+.score__show--large {
+  width: 40%;
+}
+
+.score--bet, .score--winingScore, .score--start-coins {
+  border-radius: 5px;
+  border: 3px solid white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #900100;
+  background-color: rgba(9, 10, 10, 0.82);
+  padding: 7px 3px;
+  font-family: 'Wb';
+}
+
+.score__info {
+  font-size: 1.2rem;
+}
+
+@media(min-width:425px) {
+  .score--bet, .score--winingScore, .score--start-coins {
+    font-size: 2rem;
+  }
+  .score__info {
+    font-size: 1.5rem;
+  }
+}

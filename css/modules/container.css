@@ -1,0 +1,62 @@
+.container {
+  text-align: center;
+  padding: 100px 0 0 0;
+  margin: auto;
+  height: 500px;
+  max-width: 400px;
+  min-width: 250px;
+  background-color: rgb(79, 84, 84);
+  position: relative;
+}
+
+.container__game {
+  margin-top: 10px;
+  border-right: 32px solid rgba(204, 198, 198, 0.38);
+  border-left: 32px solid rgba(17, 15, 15, 0);
+  border-top: 32px solid #3a3a3a;
+  border-bottom: 32px solid rgba(226, 229, 222, 0.6);
+}
+
+.container__display {
+  margin: auto;
+  padding: 8px;
+  max-width: 350px;
+  height: 130px;
+  background-color: #090a0a;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+
+.container__display--small {
+  margin: auto;
+  padding: 8px;
+  max-width: 350px;
+  background-color: #090a0a;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+
+@media(min-width:425px) {
+  .container__display--small {}
+}
+
+.container__header {
+  width: auto;
+  height: 100px;
+  margin: auto;
+  padding: 0 12px 0 12px;
+  min-width: 250px;
+  background-image: url('/img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container__f1border {
+  border-right: 15px solid rgba(118, 116, 116, 0.76);
+  border-left: 10px solid rgba(255, 255, 255, 0.8);
+  border-top: 10px solid rgb(241, 231, 231);
+  border-bottom: 15px solid rgba(226, 229, 222, 0.59);
+}

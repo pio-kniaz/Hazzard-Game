@@ -1,0 +1,56 @@
+.box {
+  background-size: contain!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  margin: 20px 1.6%;
+  background-color: beige!important;
+  height: 85px;
+  border: 4px solid rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: -1px 3px 36px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 36px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 36px 9px rgba(239, 234, 234, 0.75);
+}
+
+}
+
+.winning-box {
+  transform: scale(1.3);
+  transition: all ease 0.5s;
+}
+
+.scroll {
+  animation: scroll .9s cubic-bezier(.5, 0, .8, 1) 1, blur 1.6s cubic-bezier(.5, 0, .5, 1) 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  90% {
+    transform: translate3d(0, calc(100% - 1428px), 0);
+  }
+  100% {
+    transform: translate3d(0, calc(100% - 1432px), 0);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0);
+  }
+  10% {
+    filter: blur(0);
+  }
+  30% {
+    filter: blur(6px);
+  }
+  60% {
+    filter: blur(6px);
+  }
+  80% {
+    filter: blur(0);
+  }
+}
