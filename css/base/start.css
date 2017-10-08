@@ -13,10 +13,3 @@ body {
   padding: 15px;
   overflow: hidden;
 }
-
-@font-face {
-  font-family: 'Wb';
-  src: url('/fonts/TRANA___.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
