@@ -166,7 +166,7 @@ function randomImg() {
 function putImagesInToSquare() {
   var square = document.querySelectorAll(".box");
   for (var i = 0; i < square.length; i++) {
-    square[i].style.background = randomImg();
+    square[i].style.backgroundImage = randomImg();
   }
 }
 
@@ -174,12 +174,12 @@ function putImagesInToSquare() {
 // wining coindtions
 function ifIWin() {
 
-  if ((boxy[0].style.background == 'url("img/006-pizza.png")') & (boxy[1].style.background == 'url("img/006-pizza.png")') & (boxy[2].style.background == 'url("img/006-pizza.png")')) {
+  if ((boxy[0].style.backgroundImage == 'url("img/006-pizza.png")') & (boxy[1].style.backgroundImage == 'url("img/006-pizza.png")') & (boxy[2].style.backgroundImage == 'url("img/006-pizza.png")')) {
 
     var wygrana = pizzaVal.textContent = pizzaVal * multiplier;
 
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
@@ -190,13 +190,13 @@ function ifIWin() {
 
 
   }
-  if ((boxy[0].style.background == 'url("img/003-cherries.png")') & (boxy[1].style.background == 'url("img/003-cherries.png")') & (boxy[2].style.background == 'url("img/003-cherries.png")')) {
+  if ((boxy[0].style.backgroundImage == 'url("img/003-cherries.png")') & (boxy[1].style.backgroundImage == 'url("img/003-cherries.png")') & (boxy[2].style.backgroundImage == 'url("img/003-cherries.png")')) {
 
 
 
     var wygrana = cherriesVal.textContent = cherriesVal * multiplier;
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
@@ -206,14 +206,14 @@ function ifIWin() {
     }, 1200);
 
   }
-  if ((boxy[0].style.background == 'url("img/005-grapes.png")') & (boxy[1].style.background == 'url("img/005-grapes.png")') & (boxy[2].style.background == 'url("img/005-grapes.png")')) {
+  if ((boxy[0].style.backgroundImage == 'url("img/005-grapes.png")') & (boxy[1].style.backgroundImage == 'url("img/005-grapes.png")') & (boxy[2].style.backgroundImage == 'url("img/005-grapes.png")')) {
 
 
 
     var wygrana = grapeVal.textContent = grapeVal * multiplier;
 
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
@@ -222,14 +222,14 @@ function ifIWin() {
 
     }, 1200);
   }
-  if ((boxy[0].style.background == 'url("img/002-food.png")') & (boxy[1].style.background == 'url("img/002-food.png")') & (boxy[2].style.background == 'url("img/002-food.png")')) {
+  if ((boxy[0].style.backgroundImage == 'url("img/002-food.png")') & (boxy[1].style.backgroundImage == 'url("img/002-food.png")') & (boxy[2].style.backgroundImage == 'url("img/002-food.png")')) {
 
 
 
     var wygrana = brocoilVal.textContent = brocoilVal * multiplier;
 
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
@@ -238,13 +238,13 @@ function ifIWin() {
 
     }, 1200);
   }
-  if ((boxy[0].style.background == 'url("img/004-beer.png")') & (boxy[1].style.background == 'url("img/004-beer.png")') & (boxy[2].style.background == 'url("img/004-beer.png")')) {
-    // boxy[4].style.background)&&boxy[5].style.background==boxy[3].style.background) {
+  if ((boxy[0].style.backgroundImage == 'url("img/004-beer.png")') & (boxy[1].style.backgroundImage == 'url("img/004-beer.png")') & (boxy[2].style.backgroundImage == 'url("img/004-beer.png")')) {
+    // boxy[4].style.backgroundImage)&&boxy[5].style.backgroundImage==boxy[3].style.backgroundImage) {
 
 
     var wygrana = beerVal.textContent = beerVal * multiplier;
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
@@ -254,13 +254,13 @@ function ifIWin() {
     }, 1200);
   }
 
-  if ((boxy[0].style.background == 'url("img/001-fruit.png")') & (boxy[1].style.background == 'url("img/001-fruit.png")') & (boxy[2].style.background == 'url("img/001-fruit.png")')) {
+  if ((boxy[0].style.backgroundImage == 'url("img/001-fruit.png")') & (boxy[1].style.backgroundImage == 'url("img/001-fruit.png")') & (boxy[2].style.backgroundImage == 'url("img/001-fruit.png")')) {
 
 
 
     var wygrana = lemonVal.textContent = lemonVal * multiplier;
 
-    // console.log(`stank konta po wygranej ${coinsValue}`);
+
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
       audioWin.play();
