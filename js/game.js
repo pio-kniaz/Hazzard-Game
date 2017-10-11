@@ -166,7 +166,7 @@ function randomImg() {
 function putImagesInToSquare() {
   var square = document.querySelectorAll(".box");
   for (var i = 0; i < square.length; i++) {
-    square[i].style.backgroundImage = randomImg();
+    square[i].style.background = randomImg();
   }
 }
 
@@ -174,7 +174,7 @@ function putImagesInToSquare() {
 // wining coindtions
 function ifIWin() {
 
-  if ((boxy[0].style.backgroundImage == 'url("img/006-pizza.png")') & (boxy[1].style.backgroundImage == 'url("img/006-pizza.png")') & (boxy[2].style.backgroundImage == 'url("img/006-pizza.png")')) {
+  if ((boxy[0].style.background == 'url("img/006-pizza.png")') & (boxy[1].style.background == 'url("img/006-pizza.png")') & (boxy[2].style.background == 'url("img/006-pizza.png")')) {
 
     var wygrana = pizzaVal.textContent = pizzaVal * multiplier;
 
@@ -190,7 +190,7 @@ function ifIWin() {
 
 
   }
-  if ((boxy[0].style.backgroundImage == 'url("img/003-cherries.png")') & (boxy[1].style.backgroundImage == 'url("img/003-cherries.png")') & (boxy[2].style.backgroundImage == 'url("img/003-cherries.png")')) {
+  if ((boxy[0].style.background == 'url("img/003-cherries.png")') & (boxy[1].style.background == 'url("img/003-cherries.png")') & (boxy[2].style.background == 'url("img/003-cherries.png")')) {
 
 
 
@@ -206,7 +206,7 @@ function ifIWin() {
     }, 1200);
 
   }
-  if ((boxy[0].style.backgroundImage == 'url("img/005-grapes.png")') & (boxy[1].style.backgroundImage == 'url("img/005-grapes.png")') & (boxy[2].style.backgroundImage == 'url("img/005-grapes.png")')) {
+  if ((boxy[0].style.background == 'url("img/005-grapes.png")') & (boxy[1].style.background == 'url("img/005-grapes.png")') & (boxy[2].style.background == 'url("img/005-grapes.png")')) {
 
 
 
@@ -222,7 +222,7 @@ function ifIWin() {
 
     }, 1200);
   }
-  if ((boxy[0].style.backgroundImage == 'url("img/002-food.png")') & (boxy[1].style.backgroundImage == 'url("img/002-food.png")') & (boxy[2].style.backgroundImage == 'url("img/002-food.png")')) {
+  if ((boxy[0].style.background == 'url("img/002-food.png")') & (boxy[1].style.background == 'url("img/002-food.png")') & (boxy[2].style.background == 'url("img/002-food.png")')) {
 
 
 
@@ -238,8 +238,8 @@ function ifIWin() {
 
     }, 1200);
   }
-  if ((boxy[0].style.backgroundImage == 'url("img/004-beer.png")') & (boxy[1].style.backgroundImage == 'url("img/004-beer.png")') & (boxy[2].style.backgroundImage == 'url("img/004-beer.png")')) {
-    // boxy[4].style.backgroundImage)&&boxy[5].style.backgroundImage==boxy[3].style.backgroundImage) {
+  if ((boxy[0].style.background == 'url("img/004-beer.png")') & (boxy[1].style.background == 'url("img/004-beer.png")') & (boxy[2].style.background == 'url("img/004-beer.png")')) {
+    // boxy[4].style.background)&&boxy[5].style.background==boxy[3].style.background) {
 
 
     var wygrana = beerVal.textContent = beerVal * multiplier;
@@ -254,7 +254,7 @@ function ifIWin() {
     }, 1200);
   }
 
-  if ((boxy[0].style.backgroundImage == 'url("img/001-fruit.png")') & (boxy[1].style.backgroundImage == 'url("img/001-fruit.png")') & (boxy[2].style.backgroundImage == 'url("img/001-fruit.png")')) {
+  if ((boxy[0].style.background == 'url("img/001-fruit.png")') & (boxy[1].style.background == 'url("img/001-fruit.png")') & (boxy[2].style.background == 'url("img/001-fruit.png")')) {
 
 
 
