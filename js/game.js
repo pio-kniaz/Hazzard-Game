@@ -12,12 +12,12 @@ var cherriesVal = 30;
 
 // imgs
 var imgs = [
-  "url(img/005-grapes.png)",
-  "url(img/001-fruit.png)",
-  "url(img/003-cherries.png)",
+  // "url(img/005-grapes.png)",
+  // "url(img/001-fruit.png)",
+  // "url(img/003-cherries.png)",
   "url(img/006-pizza.png)",
-  "url(img/004-beer.png)",
-  "url(img/002-food.png)",
+  // "url(img/004-beer.png)",
+  // "url(img/002-food.png)",
 ]
 
 // sounds
@@ -182,9 +182,9 @@ function ifIWin() {
 
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
+      // audioWin.play();
 
     }, 1200);
 
