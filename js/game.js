@@ -1,5 +1,6 @@
 // variable
 var boxy = document.querySelectorAll(".box");
+var check = document.querySelectorAll("#check");
 
 // starting values for foods
 
@@ -10,15 +11,25 @@ var lemonVal = 40;
 var grapeVal = 50;
 var cherriesVal = 30;
 
-// imgs
+// imgs old way but doesnt effect on safarii
 var imgs = [
   // "url(img/005-grapes.png)",
   // "url(img/001-fruit.png)",
   // "url(img/003-cherries.png)",
-  "url(img/006-pizza.png)",
+  // "url(img/006-pizza.png)",
   // "url(img/004-beer.png)",
   // "url(img/002-food.png)",
 ]
+var classes = [
+  "cherries",
+  "cherries",
+  "cherries",
+  "grapes",
+  "pizza",
+   "beer",
+  "brocoil",
+  "lemon"
+ ]
 
 // sounds
 const audioWin = document.querySelector(".sound__win");
@@ -87,16 +98,15 @@ var spin = document.querySelector("#spin");
 spin.addEventListener("click", function() {
   coinsValue = coinsValue - startBet;
 
-
-
-
   for (var i = 0; i < boxy.length; i++) {
     boxy[i].classList.toggle("scroll");
+
   }
   spin.setAttribute("disabled", true)
 
   randomImg();
-  putImagesInToSquare();
+
+  putClassesInToSquare();
 
   winingScore.textContent = 0;
   coins.textContent = coinsValue;
@@ -155,30 +165,38 @@ beerList.textContent = beerVal * multiplier;
 
 // ~~~~~FUNCTIONS~~~~~~
 
-// generate Random IMG
+// generate Random Class
 function randomImg() {
-  var random = Math.floor(Math.random() * imgs.length)
+  // var random = Math.floor(Math.random() * imgs.length)
+  var random = Math.floor(Math.random() * classes.length)
 
-  return imgs[random]
+
+  return classes[random]
 
 }
-// put images to squares
-function putImagesInToSquare() {
-  var square = document.querySelectorAll(".box");
-  for (var i = 0; i < square.length; i++) {
-    square[i].style.background = randomImg();
+// put classes in to squares
+function putClassesInToSquare() {
+  for (var i = 0; i < boxy.length; i++) {
+
+
+    var template = '<div id="check" class="' + randomImg() + '">' + "</div>"
+    boxy[i].innerHTML = template;
+
+    // boxy[i].innerHTML=`<div id="check" class="${randomImg()}"></div>`
+
+    console.log(template);
+
   }
 }
 
 
 // wining coindtions
 function ifIWin() {
+  var check = document.querySelectorAll("#check");
 
-  if ((boxy[0].style.background == 'url("img/006-pizza.png")') & (boxy[1].style.background == 'url("img/006-pizza.png")') & (boxy[2].style.background == 'url("img/006-pizza.png")')) {
+  if ((check[0].className === "pizza") && (check[0].className == check[1].className) && (check[2].className == check[0].className)) {
 
     var wygrana = pizzaVal.textContent = pizzaVal * multiplier;
-
-
 
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
@@ -190,80 +208,64 @@ function ifIWin() {
 
 
   }
-  if ((boxy[0].style.background == 'url("img/003-cherries.png")') & (boxy[1].style.background == 'url("img/003-cherries.png")') & (boxy[2].style.background == 'url("img/003-cherries.png")')) {
+  if ((check[0].className === "cherries") && (check[0].className == check[1].className) && (check[2].className == check[0].className)) {
 
 
 
     var wygrana = cherriesVal.textContent = cherriesVal * multiplier;
-
-
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
+      // audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
 
     }, 1200);
 
   }
-  if ((boxy[0].style.background == 'url("img/005-grapes.png")') & (boxy[1].style.background == 'url("img/005-grapes.png")') & (boxy[2].style.background == 'url("img/005-grapes.png")')) {
+  if  ((check[0].className === "grapes") && (check[0].className == check[1].className) && (check[2].className == check[0].className)){
 
 
 
     var wygrana = grapeVal.textContent = grapeVal * multiplier;
-
-
-
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
+      // audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
 
     }, 1200);
   }
-  if ((boxy[0].style.background == 'url("img/002-food.png")') & (boxy[1].style.background == 'url("img/002-food.png")') & (boxy[2].style.background == 'url("img/002-food.png")')) {
-
-
+  if ((check[0].className === "brocoil") && (check[0].className == check[1].className) && (check[2].className == check[0].className)) {
 
     var wygrana = brocoilVal.textContent = brocoilVal * multiplier;
-
-
-
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
+      // audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
 
     }, 1200);
   }
-  if ((boxy[0].style.background == 'url("img/004-beer.png")') & (boxy[1].style.background == 'url("img/004-beer.png")') & (boxy[2].style.background == 'url("img/004-beer.png")')) {
+  if ((check[0].className === "beer") && (check[0].className == check[1].className) && (check[2].className == check[0].className)) {
     // boxy[4].style.background)&&boxy[5].style.background==boxy[3].style.background) {
 
 
     var wygrana = beerVal.textContent = beerVal * multiplier;
-
-
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
+      // audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
 
     }, 1200);
   }
 
-  if ((boxy[0].style.background == 'url("img/001-fruit.png")') & (boxy[1].style.background == 'url("img/001-fruit.png")') & (boxy[2].style.background == 'url("img/001-fruit.png")')) {
-
-
+  if ((check[0].className === "lemon") && (check[0].className == check[1].className) && (check[2].className == check[0].className)) {
 
     var wygrana = lemonVal.textContent = lemonVal * multiplier;
-
-
     var winingScore = document.querySelector(".score--winingScore");
     window.setTimeout(function() {
-      audioWin.play();
+      // audioWin.play();
       coinsValue = coinsValue + wygrana;
       winingScore.textContent = wygrana;
 
