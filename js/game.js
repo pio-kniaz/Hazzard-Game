@@ -11,15 +11,6 @@ var lemonVal = 40;
 var grapeVal = 50;
 var cherriesVal = 30;
 
-// imgs old way but doesnt effect on safarii
-var imgs = [
-  // "url(img/005-grapes.png)",
-  // "url(img/001-fruit.png)",
-  // "url(img/003-cherries.png)",
-  // "url(img/006-pizza.png)",
-  // "url(img/004-beer.png)",
-  // "url(img/002-food.png)",
-]
 var classes = [
   "cherries",
   "cherries",
@@ -184,7 +175,7 @@ function putClassesInToSquare() {
 
     // boxy[i].innerHTML=`<div id="check" class="${randomImg()}"></div>`
 
-    console.log(template);
+
 
   }
 }

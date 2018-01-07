@@ -22,10 +22,12 @@
   position: relative;
 }
 
-.inner .button--spin {}
+.inner .button--spin {
+
+}
 
 .button {
-  height: 1000px;
+
   width: 25%;
   display: inline-block;
 }
@@ -35,6 +37,7 @@
   top: -35px;
   left: 7%;
   width: 20%;
+
 }
 
 .button--on {
@@ -92,11 +95,15 @@
 
 .button:active .outer .height {
   margin-top: 0px;
-  padding-bottom: 0px;
+padding: 0;
+overflow: hidden;
+
 }
 
 .button .outer .height .inner {
-  cursor: pointer;
+  padding: 13px 0;
+  z-index: 10000;
+  cursor:pointer;
   line-height: 5px;
   font-size: 1.5rem;
   letter-spacing: .05em;
@@ -140,6 +147,8 @@
 }
 
 .button:active .outer .height .inner {
+  padding: 12px;
+  z-index: 20000;
   text-shadow: #319926 0px 1px 0px;
   border-radius: 16px;
   -webkit-border-radius: 16px;

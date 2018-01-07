@@ -84,7 +84,7 @@ background-repeat: no-repeat!important;
   }
 }
 
-@keyframes blur {
+/* @keyframes blur {
   0% {
     filter: blur(0);
   }
@@ -100,4 +100,4 @@ background-repeat: no-repeat!important;
   80% {
     filter: blur(0);
   }
-}
+} */
